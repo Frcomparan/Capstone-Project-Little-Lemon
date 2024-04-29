@@ -7,7 +7,7 @@ import deliveryIcon from '../../assets/icons/Recent.svg';
 const Specials = () => {
   return (
     <div className='py-8 lg:pt-16'>
-      <div className='container font-display'>
+      <div className='container font-display' id='specials'>
         <section className='flex justify-center items-center flex-col'>
           <h2 className='text-4xl'>This weeks specials</h2>
           <button className='bg-primary-second rounded-xl text-highlight-second px-6 py-1 text-xl mt-3 hover:bg-secondary-main w-full sm:w-auto'>
