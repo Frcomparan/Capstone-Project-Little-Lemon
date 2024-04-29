@@ -8,3 +8,11 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+
+/* Media query */
+@media (min-width: 640px) {
+  .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}

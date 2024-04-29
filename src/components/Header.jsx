@@ -12,7 +12,7 @@ const Header = () => {
           <h3 className='text-4xl leading-3 text-center sm:text-left'>
             Chicago
           </h3>
-          <p className='w-full text-2xl leading-5 mt-6 sm:leading-6 sm:w-[70%] md:w-[50%] text-center sm:text-left px-8 sm:px-0'>
+          <p className='w-full text-2xl leading-5 mt-6 sm:leading-6 sm:w-[70%] lg:w-[50%] text-center sm:text-left px-8 sm:px-0'>
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
