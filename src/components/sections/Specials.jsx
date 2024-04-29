@@ -6,8 +6,8 @@ import deliveryIcon from '../../assets/icons/Recent.svg';
 
 const Specials = () => {
   return (
-    <div className='py-8 lg:pt-16'>
-      <div className='container font-display' id='specials'>
+    <div className='py-8 lg:pt-16' id='specials'>
+      <div className='container font-display'>
         <section className='flex justify-center items-center flex-col'>
           <h2 className='text-4xl'>This weeks specials</h2>
           <button className='bg-primary-second rounded-xl text-highlight-second px-6 py-1 text-xl mt-3 hover:bg-secondary-main w-full sm:w-auto'>
@@ -15,7 +15,7 @@ const Specials = () => {
           </button>
         </section>
         <section className='grid grid-cols-12 gap-y-5 sm:gap-x-2 md:gap-x-4 lg:gap-x-8 mt-8'>
-          <div className='col-span-12 sm:col-span-6 lg:col-span-4 rounded-lg overflow-hidden bg-highlight-main hover:shadow-xl'>
+          <div className='col-span-12 sm:col-span-6 lg:col-span-4 rounded-lg overflow-hidden bg-highlight-main hover:shadow-xl cursor-default'>
             <figure className='w-full h-[40%]'>
               <img
                 src={greekSalad}
@@ -31,7 +31,7 @@ const Specials = () => {
                 <span className='text-secondary-main'>$12.99</span>
               </div>
               <div className='py-4'>
-                <p className='text-primary-main text-sm'>
+                <p className='text-primary-main text-sm '>
                   The famous greek salad of crispy lettuce, peppers, olives and
                   our Chicago feta cheese, garnished with garlic and rosemary
                   croutons.
@@ -45,7 +45,7 @@ const Specials = () => {
               </div>
             </div>
           </div>
-          <div className='col-span-12 sm:col-span-6 lg:col-span-4 rounded-lg overflow-hidden bg-highlight-main hover:shadow-xl'>
+          <div className='col-span-12 sm:col-span-6 lg:col-span-4 rounded-lg overflow-hidden bg-highlight-main hover:shadow-xl cursor-default'>
             <figure className='w-full h-[40%]'>
               <img
                 src={bruchetta}
@@ -74,7 +74,7 @@ const Specials = () => {
               </div>
             </div>
           </div>
-          <div className='col-span-12 sm:col-span-6 lg:col-span-4 rounded-lg overflow-hidden bg-highlight-main hover:shadow-xl'>
+          <div className='col-span-12 sm:col-span-6 lg:col-span-4 rounded-lg overflow-hidden bg-highlight-main hover:shadow-xl cursor-default'>
             <figure className='w-full h-[40%]'>
               <img
                 src={lemmonDessert}

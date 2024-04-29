@@ -9,7 +9,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className='sticky top-0 left-0 w-lvw bg-white z-[100]'>
+      <nav className='sticky top-0 left-0 w-[vw] bg-white z-[100]'>
         <div className='container flex justify-between items-center py-3'>
           <figure
             className='cursor-pointer md:hidden'
