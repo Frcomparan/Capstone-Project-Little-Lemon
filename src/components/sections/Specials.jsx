@@ -6,10 +6,12 @@ import deliveryIcon from '../../assets/icons/Recent.svg';
 
 const Specials = () => {
   return (
-    <div className='py-8 lg:pt-16' id='specials'>
+    <div className='py-16'>
       <div className='container font-display'>
         <section className='flex justify-center items-center flex-col md:flex-row md:justify-between'>
-          <h2 className='text-4xl'>This weeks specials</h2>
+          <h2 className='text-6xl font-body text-primary-main text-center md:text-left'>
+            This weeks specials
+          </h2>
           <button className='bg-primary-second rounded-xl text-highlight-second px-6 py-1 text-xl mt-3 hover:bg-secondary-main w-full sm:w-auto'>
             Online Menu
           </button>
@@ -106,6 +108,7 @@ const Specials = () => {
           </div>
         </section>
       </div>
+      <span id='testimonials'></span>
     </div>
   );
 };

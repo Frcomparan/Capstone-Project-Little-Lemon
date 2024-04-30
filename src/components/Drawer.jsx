@@ -6,8 +6,8 @@ const Drawer = ({ isOpen, setIsOpen }) => {
   return (
     <>
       <div className='bg-black/85 backdrop-blur-sm w-lvw h-lvh fixed top-0 left-0 z-50'></div>
-      <div className='fixed top-0 left-0 w-lvw h-lvh z-[51]'>
-        <div className='h-full w-[50vw] bg-white relative'>
+      <div className='fixed top-0 left-0 w-lvw h-lvh z-[101]'>
+        <div className='h-full w-[100vw] md:w-[50vw] bg-white relative'>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className='rounded absolute top-4 right-4 bg-primary-main hover:bg-secondary-main'

@@ -31,6 +31,7 @@ const Header = () => {
           </div>
         </figure>
       </div>
+      <span id='specials'></span>
     </div>
   );
 };

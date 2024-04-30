@@ -6,10 +6,12 @@ import customer4 from '../../assets/img/costumer_4.jpg';
 
 const Testiomonials = () => {
   return (
-    <div className='py-8 lg:pt-16 bg-highlight-main' id='specials'>
+    <div className='py-16 bg-highlight-main'>
       <div className='container font-display'>
         <section className='flex justify-center items-center flex-col md:flex-row md:justify-between'>
-          <h2 className='text-4xl'>Customer Testimonials</h2>
+          <h2 className='text-6xl font-body text-primary-main text-center md:text-left'>
+            Customer Testimonials
+          </h2>
         </section>
         <section className='grid grid-cols-12 gap-y-5 gap-x-2 md:gap-x-4 mt-8'>
           <div className='col-span-12 sm:col-span-6 lg:col-span-3 rounded-lg overflow-hidden bg-primary-main hover:shadow-xl cursor-default'>
@@ -148,6 +150,7 @@ const Testiomonials = () => {
           </div>
         </section>
       </div>
+      <span id='aboutUs'></span>
     </div>
   );
 };
