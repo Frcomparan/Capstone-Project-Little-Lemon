@@ -9,6 +9,9 @@ const BookingForm = ({ availableTimes, dispatch }) => {
     occasion: 'Other',
   });
 
+  const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -27,10 +30,27 @@ const BookingForm = ({ availableTimes, dispatch }) => {
 
     // Send form data to the server
     console.log(formState);
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
+      setSubmitted(true);
+    }, 2000);
   };
 
   return (
     <form className='flex flex-col font-display gap-2' onSubmit={handleSubmit}>
+      {/* Confirmation Message */}
+      {submitted && (
+        <div className='field-container w-full'>
+          <h3 className='text-2xl font-body text-primary-main inline-block mr-2'>
+            Your reservation is confirmed for:
+          </h3>
+          <p className='text-2xl inline-block font-bold font-body'>
+            {formState.resDate} at {formState.resTime}
+          </p>
+        </div>
+      )}
       <div className='field-container w-full flex flex-col '>
         <label htmlFor='customerName' className='font-body text-2xl'>
           Customer Name
@@ -55,6 +75,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
           min={new Date().toISOString().split('T')[0]}
           onChange={handleChange}
           value={formState.resDate}
+          required
           className='px-2 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-main focus:border-transparent'
         />
       </div>
@@ -119,6 +140,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
         <button
           type='submit'
           className='bg-primary-second text-primary-main font-body text-2xl py-3 rounded-md hover:bg-secondary-main focus:outline-none focus:ring-2 focus:ring-primary-dark focus:border-transparent disabled:bg-primary-main disabled:text-gray-300 disabled:cursor-not-allowed'
+          disabled={isLoading}
         >
           Save Reservation
         </button>
