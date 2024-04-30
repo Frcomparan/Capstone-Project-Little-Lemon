@@ -8,7 +8,7 @@ const Specials = () => {
   return (
     <div className='py-8 lg:pt-16' id='specials'>
       <div className='container font-display'>
-        <section className='flex justify-center items-center flex-col'>
+        <section className='flex justify-center items-center flex-col md:flex-row md:justify-between'>
           <h2 className='text-4xl'>This weeks specials</h2>
           <button className='bg-primary-second rounded-xl text-highlight-second px-6 py-1 text-xl mt-3 hover:bg-secondary-main w-full sm:w-auto'>
             Online Menu
