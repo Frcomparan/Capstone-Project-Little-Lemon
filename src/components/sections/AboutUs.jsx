@@ -1,6 +1,6 @@
 import React from 'react';
-import img1 from '../../assets/img/restaurant chef B.jpg';
-import img2 from '../../assets/img/restaurant.jpg';
+import img1 from '../../assets/img/Mario and Adrian b.jpg';
+import img2 from '../../assets/img/Mario and Adrian A.jpg';
 
 const AboutUs = () => {
   return (
@@ -44,6 +44,7 @@ const AboutUs = () => {
           </div>
         </section>
       </div>
+      <span id='reservation'></span>
     </div>
   );
 };
